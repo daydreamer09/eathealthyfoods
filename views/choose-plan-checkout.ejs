@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>Checkout</title>
+
+    <!-- style lists -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/feature-carousel.css">
+    <link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700' rel='stylesheet' type='text/css'>
+
+    
+</head>
+<body class="choose-plan-page">
+
+    <!-- loader image before page load starts -->
+    <div class="se-pre-con"></div>
+    <!-- loader image before page load ends -->
+
+    <!-- main wrapper of the site starts -->
+    <div class="wrapper">
+
+        <!-- ============== Header starts ============== -->
+        <header class="logo-only-header">
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+        </header>
+        <!-- ============== Header ends ============== -->
+
+        <main>
+            <!-- =============== plan steps block starts ================== -->
+            <section class="plan-step">
+                <div class="steps-wrapper" data-wizard-init>
+
+                    <!-- == step navigation starts ==-->
+                    <div class="container">
+                        <ul class="text-center steps">
+                            <li class="wow fadeInUp step1"><a href="/regPage"><span>1</span> About You</a></li>
+                            <li class="wow fadeInUp step2"><a href="/selectPlan"><span>2</span> Select Program</a></li>
+                            <li class="wow fadeInUp step4 current"><a href="/checkout"><span>4</span> Checkout</a></li>
+                        </ul>
+                    </div>
+                    <!-- == step navigation ends ==-->
+
+                    <!-- == step content starts ==-->
+                    <div class="step-content">
+                        
+                        <!-- choose plan checkout step starts -->
+                        <div class="step3">
+                            <div class="container">
+
+                                <!-- payment method block starts -->
+                                <div class="payment-method-block">
+
+                                    <!-- Select payment form block starts -->
+                                    <div class="payment-form">
+                                        <form class="checkout-form" method="POST" action="/pay">
+                                            <fieldset>
+                                                <label>Name on Card</label>
+                                                <input type="text" name='name' />
+                                            </fieldset>
+                                            <fieldset>
+                                                <label>Card Number</label>
+                                                <input type="number" name="cardNumber" placeholder="0000-0000-0000-0000"/>
+                                            </fieldset>
+                                            <div class="clear"></div>
+                                            <fieldset>
+                                                <label>Month</label>
+                                                <select>
+                                                    <option>Select Month</option>
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>March</option>
+                                                </select>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label>Year</label>
+                                                <select>
+                                                    <option>Select Year</option>
+                                                    <option>2004</option>
+                                                    <option>2005</option>
+                                                    <option>2006</option>
+                                                </select>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label>CVV</label>
+                                                <input type="number" name="cvv" />
+                                            </fieldset>
+                                            <fieldset>
+                                                <input class="btn btn-x-big hvr-wobble-horizontal" type="submit" value="place order" />
+                                                
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <!-- Select payment form block starts -->
+                                </div>
+                                <!-- payment method block ends -->
+
+                            </div>
+                        </div>
+                        <!-- choose plan checkout step ends -->
+                    </div>
+                </div>
+            </section>
+            <!-- =============== plan steps block ends ================== -->
+        </main>
+
+
+        <!-- ============== footer block starts ============== -->
+        <footer class="limited-footer">
+            <div class="container">
+                &copy; ALL RIGHT RESERVED.
+            </div>
+        </footer>
+        <!-- ============== footer block ends ============== -->
+
+
+    </div>
+    <!-- main wrapper of the site ends -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.featureCarousel.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/owl.carousel.js"></script>    
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
